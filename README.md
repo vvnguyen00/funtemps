@@ -37,36 +37,50 @@ func main() {
 flag.Parse()
 
   //fahrenheit to celcius
-    if out == "C" && isFlagPassed("F") {
+   
+   if out == "C" && isFlagPassed("F") {
+        
         fmt.Println(conv.FahrenheitToCelsius(fahr))
     }
 
 
 //Celsiustofarenheit
-    if out == "F" && isFlagPassed("C") {
-        fmt.Println(conv.CelsiusToFahrenheit(celsius))
+   
+   if out == "F" && isFlagPassed("C") {
+       
+       fmt.Println(conv.CelsiusToFahrenheit(celsius))
     }
 
 //kelvin til farenheit
+
 if out == "F" && isFlagPassed("K") {
-    fmt.Println(conv.KelvinToFahrenheit(fahr))
+   
+   fmt.Println(conv.KelvinToFahrenheit(fahr))
 }
 
 //farenheit til Kelvin  
 
 if out == "K" && isFlagPassed("F") {
+    
     fmt.Println(conv.FahrenheitToKelvin(fahr))
 }
 
 //Celsius til kelvin
 
+
 if out == "K" && isFlagPassed("C") {
-    fmt.Println(conv.CelsiusToKelvin(celsius))
+   
+   
+   fmt.Println(conv.CelsiusToKelvin(celsius))
 }
 
 //konverterer Kelvin til Celcius
+
+
 if out == "C" && isFlagPassed("K") {
-    fmt.Println(conv.CelsiusToKelvin(fahr))
+    
+   
+   fmt.Println(conv.CelsiusToKelvin(fahr))
 }
 
 }
