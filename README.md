@@ -3,7 +3,6 @@ Klarte en liten grad å utføre dette på terminalen. Fikk ikke helt konkret rik
 funtemps -K 273.15 -out C
 Output: 273.15K er 0°C
 
-// det kom heller som ... 
 
 funtemps -F 32 -out C
 Output: 32°F er 0°C
@@ -11,6 +10,8 @@ Output: 32°F er 0°C
 
 funtemps -C -89.4 -out F
 Output: -89.4°C er -128.92°F
+
+// men fikk heller disse som respons. 
 
 // vinhvuainguyen@Vinhs-Air funtemps % ./funtemps -C -89.4 -out F
 
@@ -27,6 +28,10 @@ Output: -89.4°C er -183.75K
 
 183.74999999999997
 
+
+
+
+Konvertering.
 
 
 Jeg gjorde dette først på main.go. Det fungerte og, men jeg skrev heller det som chat.openAi anbefalte istedenfor.
@@ -96,6 +101,10 @@ func isFlagPassed(name string) bool {
     })
     return found
 }
+
+
+Conv-mappen gikk kjempe fint. 
+
 
 
 
