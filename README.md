@@ -13,14 +13,18 @@ funtemps -C -89.4 -out F
 Output: -89.4°C er -128.92°F
 
 // vinhvuainguyen@Vinhs-Air funtemps % ./funtemps -C -89.4 -out F
+
 0 F sun
+
 -128.92000000000002
 
 funtemps -C -89.4 -out K
 Output: -89.4°C er -183.75K
 
 // vinhvuainguyen@Vinhs-Air funtemps % ./funtemps  -C -89.4 -out K
+
 0 K sun
+
 183.74999999999997
 
 
