@@ -1,20 +1,36 @@
-Klarte en liten grad å utføre dette på terminalen. 
+Klarte en liten grad å utføre dette på terminalen. Fikk ikke helt konkret riktig svar som f.eks. 
 
 funtemps -K 273.15 -out C
 Output: 273.15K er 0°C
+
+// det kom heller som ... 
+
 funtemps -F 32 -out C
 Output: 32°F er 0°C
+
+
 funtemps -C -89.4 -out F
 Output: -89.4°C er -128.92°F
+
+// vinhvuainguyen@Vinhs-Air funtemps % ./funtemps -C -89.4 -out F
+0 F sun
+-128.92000000000002
+
 funtemps -C -89.4 -out K
 Output: -89.4°C er -183.75K
+
+// vinhvuainguyen@Vinhs-Air funtemps % ./funtemps  -C -89.4 -out K
+0 K sun
+183.74999999999997
 
 
 
 Jeg gjorde dette først på main.go. Det fungerte og, men jeg skrev heller det som chat.openAi anbefalte istedenfor.
-func main() {
 
-    flag.Parse()
+
+
+func main() {
+flag.Parse()
 
   //fahrenheit to celcius
     if out == "C" && isFlagPassed("F") {
