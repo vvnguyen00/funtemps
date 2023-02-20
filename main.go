@@ -109,30 +109,33 @@ func main() {
 	fra Kelvin til Celsius ved hjelp av en funksjon som heter "KelvinToCelsius",
 	og skrive ut resultatet på samme måte som for Fahrenheit-til-Celsius konverteringen.
 	Hvis ingen av flaggene er sendt, vil ingen av konverteringene skje, og det vil ikke bli skrevet ut noe.
-
-*/
+	*/
 
 
 	if out == "C" {
 		if isFlagPassed("F") {
-			fmt.Println(conv.FahrenheitToCelsius(fahr))
+			fmt.Printf("%.2f\n", conv.FahrenheitToCelsius(fahr))
 		} else if isFlagPassed("K") {
-			fmt.Println(conv.KelvinToCelsius(kelvin))
+			fmt.Printf("%.2f\n", conv.KelvinToCelsius(kelvin))
 		}
 	} else if out == "F" {
 		if isFlagPassed("C") {
-			fmt.Println(conv.CelsiusToFahrenheit(celsius))
+			fmt.Printf("%.2f\n", conv.CelsiusToFahrenheit(celsius))
 		} else if isFlagPassed("K") {
-			fmt.Println(conv.KelvinToFahrenheit(kelvin))
+			fmt.Printf("%.2f\n", conv.KelvinToFahrenheit(kelvin))
 		}
 	} else if out == "K" {
 		if isFlagPassed("C") {
-			fmt.Println(conv.CelsiusToKelvin(celsius))
+			fmt.Printf("%.2f\n", conv.CelsiusToKelvin(celsius))
 		} else if isFlagPassed("F") {
-			fmt.Println(conv.FahrenheitToKelvin(fahr))
+			fmt.Printf("%.2f\n", conv.FahrenheitToKelvin(fahr))
 		}
 	}
 }
+
+
+
+
 
 // Helper function to check if a flag is passed
 func isFlagPassed(flagName string) bool {
