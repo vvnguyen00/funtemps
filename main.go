@@ -95,7 +95,24 @@ func main() {
 		return
 	}
 
-	// Convert the temperature
+	
+	
+	
+	
+	
+	/** 
+	Kode hentet fra ChatopenAi. Convert the temperature.
+	Hvis "F" flagget er sendt, vil programmet konvertere variabelen 
+	f.eks. med navnet "fahr" ved funksjonen "FahrenheittoCelsius"
+	som hentes fra conv-pakken, og skrive ut resultatet ved hjelp av fmt.Println".
+	Hvis "K" flagget er sendt, vil programmet konvertere en variabel med navnet "kelvin" 
+	fra Kelvin til Celsius ved hjelp av en funksjon som heter "KelvinToCelsius",
+	og skrive ut resultatet på samme måte som for Fahrenheit-til-Celsius konverteringen.
+	Hvis ingen av flaggene er sendt, vil ingen av konverteringene skje, og det vil ikke bli skrevet ut noe.
+
+*/
+
+
 	if out == "C" {
 		if isFlagPassed("F") {
 			fmt.Println(conv.FahrenheitToCelsius(fahr))
