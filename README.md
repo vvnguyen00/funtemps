@@ -107,6 +107,10 @@ Conv-mappen gikk kjempe fint.
 
 
 
+Fikk ikke til med funfacts.
+
+
+
 
 Klarte å utføre greit med test-drevet utvikling.
 
